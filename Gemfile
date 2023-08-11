@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -16,13 +18,15 @@ gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
-  gem 'pry'
   gem 'factory_girl_rails'
+  gem 'pry'
   gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
   gem 'rubocop', '~> 1.56'
+  gem 'rubocop-rails'
+  gem 'rubocop-rspec'
   gem 'solargraph', '~> 0.49.0'
   gem 'web-console'
 end
