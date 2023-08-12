@@ -1,22 +1,35 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
-  password: postgres
-  host: localhost
-  port: 5432
+  pool: 5
+
+production: &production
+  <<: *default
+  database: <%= ENV['RDS_DB_NAME'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
+
+staging:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+
+training:
+  <<: *production
 
 development:
   <<: *default
-  database: desafio_dev
+  host: desafiodev-postgres
+  database: desafiodev_development
+  min_messages: warning
+  username: postgres
+  password: postgres
 
 test:
   <<: *default
-  database: desafio_dev_test
-
-production:
-  <<: *default
-  database: desafio_dev_production
-  username: desafio_dev
-  password: <%= ENV["DESAFIO_DEV_DATABASE_PASSWORD"] %>
+  host: desafiodev-postgres
+  database: desafiodev_test
+  min_messages: warning
+  username: postgres
+  password: postgres
