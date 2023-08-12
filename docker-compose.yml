@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  web:
+    container_name: desafio_dev
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/desafio-dev
+    ports:
+      - '3000:3000'
+    environment:
+      - RAILS_ENV=development
+      - DATABASE_HOST=desafiodev-postgres
+    depends_on:
+      - db
+
+  test:
+    container_name: desafiodev_test
+    build:
+      context: .
+      dockerfile: DockerfileTest
+    command: bundle exec rails parallel:spec
+    volumes:
+      - .:/desafio-dev
+    ports:
+      - "3003:3003"
+    environment:
+      - RAILS_ENV=test
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: desafiodev-postgres
+    volumes:
+      - desafio-dev-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+volumes:
+  desafio-dev-data:
