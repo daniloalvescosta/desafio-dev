@@ -32,6 +32,6 @@
 /coverage
 /app/assets/builds/*
 !/app/assets/builds/.keep
-/tmp/cache
+tmp/cache/*
 /node_modules
 log/development.log
