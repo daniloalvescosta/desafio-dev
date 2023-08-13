@@ -18,7 +18,7 @@ gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
-  gem 'factory_girl_rails'
+  gem 'factory_bot'
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'
 end
