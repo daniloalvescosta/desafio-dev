@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag 'analytics' %>
+
+<div id='analytics'>
+  <div class='card'>
+    <h4>Entradas</h4>
+    <h4><%= "R$#{@entries}" %> </h4>
+  </div>
+
+  <div class='card'>
+    <h4>Saidas</h4>
+    <h4><%= "R$#{@outflows}" %></h4>
+  </div>
+
+  <div class='card'>
+    <h4>Saldo</h4>
+    <h4><%= "R$#{@balance}" %></h4>
+  </div>
+</div>
