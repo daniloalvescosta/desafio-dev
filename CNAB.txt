@@ -1,21 +1,29 @@
-3201903010000014200096206760174753****3153153453JOÃO MACEDO   BAR DO JOÃO       
-5201903010000013200556418150633123****7687145607MARIA JOSEFINALOJA DO Ó - MATRIZ
-3201903010000012200845152540736777****1313172712MARCOS PEREIRAMERCADO DA AVENIDA
-2201903010000011200096206760173648****0099234234JOÃO MACEDO   BAR DO JOÃO       
-1201903010000015200096206760171234****7890233000JOÃO MACEDO   BAR DO JOÃO       
-2201903010000010700845152540738723****9987123333MARCOS PEREIRAMERCADO DA AVENIDA
-2201903010000050200845152540738473****1231231233MARCOS PEREIRAMERCADO DA AVENIDA
-3201903010000060200232702980566777****1313172712JOSÉ COSTA    MERCEARIA 3 IRMÃOS
-1201903010000020000556418150631234****3324090002MARIA JOSEFINALOJA DO Ó - MATRIZ
-5201903010000080200845152540733123****7687145607MARCOS PEREIRAMERCADO DA AVENIDA
-2201903010000010200232702980568473****1231231233JOSÉ COSTA    MERCEARIA 3 IRMÃOS
-3201903010000610200232702980566777****1313172712JOSÉ COSTA    MERCEARIA 3 IRMÃOS
-4201903010000015232556418150631234****6678100000MARIA JOSEFINALOJA DO Ó - FILIAL
-8201903010000010203845152540732344****1222123222MARCOS PEREIRAMERCADO DA AVENIDA
-3201903010000010300232702980566777****1313172712JOSÉ COSTA    MERCEARIA 3 IRMÃOS
-9201903010000010200556418150636228****9090000000MARIA JOSEFINALOJA DO Ó - MATRIZ
-4201906010000050617845152540731234****2231100000MARCOS PEREIRAMERCADO DA AVENIDA
-2201903010000010900232702980568723****9987123333JOSÉ COSTA    MERCEARIA 3 IRMÃOS
-8201903010000000200845152540732344****1222123222MARCOS PEREIRAMERCADO DA AVENIDA
-2201903010000000500232702980567677****8778141808JOSÉ COSTA    MERCEARIA 3 IRMÃOS
-3201903010000019200845152540736777****1313172712MARCOS PEREIRAMERCADO DA AVENIDA
+2020-10-25    | R$ 90.50    | 123.456.789-0 | Visa         | 13:30:00 | Lily Morgan      | Enchanted Emporium     | 3
+2020-12-18    | R$ 135.20   | 987.654.321-0 | MasterCard   | 10:45:00 | Max Stone        | Nebula Necessities     | 6
+2021-02-08    | R$ 200.00   | 555.555.555-5 | Amex         | 15:15:00 | Stella Moon      | Astral Artefacts       | 1
+2021-04-27    | R$ 42.80    | 111.222.333-4 | Discover     | 09:30:00 | Nova Grace       | Starlight Souvenirs    | 8
+2021-07-15    | R$ 65.00    | 888.777.666-5 | Diners       | 12:00:00 | Orion Brooks     | Celestial Creations    | 5
+2021-09-05    | R$ 110.25   | 444.333.222-1 | Visa         | 17:45:00 | Luna Reed        | Crystal Chronicals     | 2
+2022-01-19    | R$ 180.75   | 999.888.777-2 | MasterCard   | 11:00:00 | Zephyr Gale      | Enigma Emporium        | 7
+2022-04-03    | R$ 95.30    | 777.666.555-3 | Amex         | 16:30:00 | Aurora Frost     | Mythical Market        | 4
+2022-06-22    | R$ 150.00   | 123.456.789-0 | Visa         | 14:00:00 | Orion Brooks     | Whispering Wares       | 9
+2022-09-14    | R$ 70.80    | 987.654.321-0 | MasterCard   | 10:15:00 | Luna Reed        | Arcane Accents         | 3
+2022-11-07    | R$ 250.00   | 555.555.555-5 | Amex         | 13:45:00 | Nova Grace       | Ethereal Emporium      | 6
+2023-01-28    | R$ 49.50    | 111.222.333-4 | Discover     | 09:00:00 | Stella Moon      | Enchanted Elegance     | 1
+2023-03-19    | R$ 82.40    | 888.777.666-5 | Diners       | 12:30:00 | Max Stone        | Radiant Relics         | 8
+2023-05-10    | R$ 125.00   | 444.333.222-1 | Visa         | 17:00:00 | Lily Morgan      | Mystical Mercantile    | 5
+2023-07-01    | R$ 165.75   | 999.888.777-2 | MasterCard   | 11:15:00 | Orion Brooks     | Celestial Curios       | 2
+2023-08-24    | R$ 95.80    | 777.666.555-3 | Amex         | 15:45:00 | Aurora Frost     | Enchanted Emporium     | 7
+2020-11-12    | R$ 110.00   | 123.456.789-0 | Visa         | 14:45:00 | Luna Reed        | Quirky Quest           | 4
+2020-12-31    | R$ 79.20    | 987.654.321-0 | MasterCard   | 09:30:00 | Nova Grace       | Ethereal Emporium      | 9
+2021-03-20    | R$ 190.00   | 555.555.555-5 | Amex         | 16:00:00 | Max Stone        | Enchanted Emporium     | 3
+2021-06-09    | R$ 34.70    | 111.222.333-4 | Discover     | 12:15:00 | Stella Moon      | Dreamer's Depot        | 6
+2021-08-01    | R$ 57.50    | 888.777.666-5 | Diners       | 10:00:00 | Aurora Frost     | Twilight Treasures     | 1
+2021-10-19    | R$ 125.80   | 444.333.222-1 | Visa         | 15:30:00 | Orion Brooks     | Enchanted Emporium     | 4
+2022-02-01    | R$ 150.00   | 999.888.777-2 | MasterCard   | 11:45:00 | Max Stone        | Mystic Marbles         | 7
+2022-04-18    | R$ 85.00    | 777.666.555-3 | Amex         | 09:15:00 | Lily Morgan      | Celestial Curiosities  | 2
+2022-07-06    | R$ 215.60   | 123.456.789-0 | Visa         | 16:15:00 | Nova Grace       | Stellar Stash          | 5
+2022-09-26    | R$ 40.00    | 987.654.321-0 | MasterCard   | 12:30:00 | Stella Moon      | Enchanted Elixirs      | 8
+2022-11-15    | R$ 78.30    | 555.555.555-5 | Amex         | 10:00:00 | Aurora Frost     | Fabled Finds           | 3
+2023-02-05    | R$ 130.50   | 111.222.333-4 | Discover     | 14:45:00 | Max Stone        | Cosmic Curios          | 6
+2023-04-26    | R$ 95.75    | 888.777.666-5 | Diners       | 09:45:00 | Lily Morgan      | Dreamy Delights        | 1
