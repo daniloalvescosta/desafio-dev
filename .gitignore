@@ -35,3 +35,4 @@
 /tmp/cache/*
 /node_modules
 log/development.log
+tmp/cache/bootsnap/*
