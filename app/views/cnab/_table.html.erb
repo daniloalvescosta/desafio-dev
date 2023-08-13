@@ -1,0 +1,24 @@
+<%= stylesheet_link_tag 'table' %>
+
+<table class="centered-table">
+  <thead>
+    <tr>
+      <th>Loja</th>
+      <th>Valor</th>
+      <th>Natureza</th>
+      <th>Tipo</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cnabs.each do |cnab| %>
+    <tr>
+      <td><%= cnab.store_name %></td>
+      <td><%= "R$#{cnab.value}" %></td>
+      <td><%= cnab.type_transaction.nature %></td>
+      <td><%= cnab.type_transaction.description %></td>
+      <td><%= cnab.date %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
