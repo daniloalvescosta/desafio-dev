@@ -1,0 +1,18 @@
+<%= stylesheet_link_tag 'header' %>
+
+<div id='header-div'>
+  <div id='header-content'>
+    <h1 id='header-title'>Bycoders_</h1>
+    <h3 id='header-subtitle'>Desafio Dev</h3>
+  </div>
+
+  <div id='header-buttons'>
+    <%= form_tag(import_path, method: :post, multipart: true) do %>
+      <%= file_field_tag :file, class: 'inputfile', type:'file'%> 
+      <label for='file' id='import-btn'>Escolha o arquivo</label>
+      <br>
+      <br>
+      <%= submit_tag 'Importar', class: 'file-btn' %>
+    <% end %>
+  </div>
+</div>
