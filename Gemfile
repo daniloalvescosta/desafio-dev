@@ -17,10 +17,12 @@ gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-group :development, :test do
-  gem 'factory_bot'
+group :test, :development do
+  gem 'factory_bot_rails'
+  gem 'faker', '~> 2.18'
   gem 'pry'
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '4.0.1'
+  gem 'shoulda-matchers', '~> 5.0'
 end
 
 group :development do
