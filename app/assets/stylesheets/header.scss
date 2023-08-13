@@ -1,0 +1,55 @@
+$background: #141C16;
+$font-color: #FFFFFF;
+$buttons: #02BD3A;
+
+#header-div{
+  background-color: $background;
+  height: 300px;
+  #header-title{
+    color: $font-color;
+    text-align: center;
+    font-size: 80px;
+  }
+
+  #header-subtitle{
+    color: $font-color;
+    text-align: center;
+  }
+
+  #header-buttons{
+    display: flex;
+    padding: 20px;
+    justify-content: flex-end; 
+    #import-btn{
+      border-color: $buttons;
+      color: $font-color;
+      width: 94px;
+      padding: 5px;
+      border-radius: 5px;
+      border-style: dotted;
+    }
+    .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    #import-btn:hover{
+      cursor: pointer;
+    }
+    .file-btn{
+      background-color: $buttons;
+      color: $font-color;
+      width: 94px;
+      padding: 5px;
+      border-radius: 5px;
+      border-style: none;
+      margin: auto;
+    }
+    .file-btn:hover{
+      cursor: pointer;
+    }
+  }
+}
