@@ -10,12 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_13_010816) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_13_144712) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "cnabs", force: :cascade do |t|
+    t.bigint "type_transaction_id", null: false
+    t.date "date"
+    t.decimal "value"
+    t.string "cpf"
+    t.string "card"
+    t.datetime "hour"
+    t.string "owner"
+    t.string "store_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["type_transaction_id"], name: "index_cnabs_on_type_transaction_id"
+  end
+
   create_table "type_transactions", force: :cascade do |t|
-    t.integer "type"
     t.string "description"
     t.string "nature"
     t.string "signal"
@@ -23,4 +36,5 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_13_010816) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "cnabs", "type_transactions"
 end
