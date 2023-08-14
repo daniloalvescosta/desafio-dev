@@ -29,7 +29,7 @@ RSpec.describe CnabController, type: :controller do
       post :import, params: { file: }
       expect(Cnab.count).to be > 0
       expect(assigns(:cnabs)).to eq(Cnab.all)
-      expect(response).to have_http_status(:no_content)
+      expect(response).to have_http_status(:found)
     end
   end
 
