@@ -13,6 +13,7 @@ class CnabController < ApplicationController
     CnabImportService.import(file)
 
     @cnabs = Cnab.all
+    redirect_to root_path
   end
 
   def destroy
