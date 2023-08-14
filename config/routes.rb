@@ -3,5 +3,5 @@
 Rails.application.routes.draw do
   root 'cnab#index'
   post 'import', to: 'cnab#import'
-  delete 'destroy', to: 'cnab#destroy'
+  delete 'destroy/:id', to: 'cnab#destroy'
 end
