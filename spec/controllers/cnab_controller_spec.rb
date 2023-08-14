@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # spec/controllers/cnab_controller_spec.rb
 require 'rails_helper'
 
@@ -24,7 +26,7 @@ RSpec.describe CnabController, type: :controller do
     let(:file) { fixture_file_upload(file_path) }
 
     it 'imports CNAB data and assigns @cnabs' do
-      post :import, params: { file: file }
+      post :import, params: { file: }
       expect(Cnab.count).to be > 0
       expect(assigns(:cnabs)).to eq(Cnab.all)
       expect(response).to have_http_status(:no_content)
@@ -32,7 +34,7 @@ RSpec.describe CnabController, type: :controller do
   end
 
   describe 'DELETE #destroy' do
-    let(:cnab) { FactoryBot.create(:cnab, type_transaction: type_transaction) }
+    let(:cnab) { FactoryBot.create(:cnab, type_transaction:) }
 
     it 'destroys the CNAB record' do
       expect do
