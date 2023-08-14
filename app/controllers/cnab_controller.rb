@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CnabController < ApplicationController
   def index
     @cnabs = Cnab.all
