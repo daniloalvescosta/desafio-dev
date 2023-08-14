@@ -8,6 +8,7 @@
       <th>Natureza</th>
       <th>Tipo</th>
       <th>Data</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,11 @@
       <td><%= cnab.type_transaction.nature %></td>
       <td><%= cnab.type_transaction.description %></td>
       <td><%= cnab.date %></td>
+      <td><%= link_to image_tag('trash_icon', style: 'width: 20px;'), "destroy/#{cnab.id}", data: {
+        turbo_method: :delete,
+        turbo_confirm: 'Você realmente deseja remover este dado?'
+      } %>
+      </td>
     </tr>
     <% end %>
   </tbody>
