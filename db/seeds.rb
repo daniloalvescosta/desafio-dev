@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 TypeTransaction.create(
   description: 'Débito',
   nature: 'Entrada',
@@ -51,4 +53,3 @@ TypeTransaction.create(
   nature: 'Saída',
   signal: '-'
 )
-
