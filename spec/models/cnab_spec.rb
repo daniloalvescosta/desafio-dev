@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe Cnab, type: :model do
   let(:type_transaction) { FactoryBot.create(:type_transaction) }
-  let(:cnab) { FactoryBot.create(:cnab, type_transaction: type_transaction) }
+  let(:cnab) { FactoryBot.create(:cnab, type_transaction:) }
 
   describe 'factory' do
     it { expect(cnab).to be_valid }
