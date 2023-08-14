@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :type_transaction do
     description { Faker::Lorem.sentence }
-    nature { ['income', 'expense'].sample }
+    nature { %w[income expense].sample }
     signal { ['+', '-'].sample }
   end
 end
