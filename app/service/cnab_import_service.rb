@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CnabImportService < ApplicationService
   def self.import(file)
     File.foreach(file) do |line|
@@ -8,13 +10,13 @@ class CnabImportService < ApplicationService
       value = value_str.gsub('R$', '').strip.to_f
 
       Cnab.create!(
-        date: date,
-        value: value,
-        cpf: cpf,
-        card: card,
-        hour: hour,
-        owner: owner,
-        store_name: store_name,
+        date:,
+        value:,
+        cpf:,
+        card:,
+        hour:,
+        owner:,
+        store_name:,
         type_transaction_id: type.to_i
       )
     end
